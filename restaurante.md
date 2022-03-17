@@ -1,0 +1,36 @@
+print('Olá, Seja bem-vindo ao nosso restaurante de massas!')
+nome = input('Qual seu nome?')
+print(' ')
+print('É um prazer ter você aqui,', nome)
+print('Você deseja um macarão ou uma pizza?')
+pedido=int(input('Digite [1] Macarrão ou [2] Pizza'))
+print(' ')
+
+while pedido < 1 or pedido > 2:
+    print('Não entendi, vamos fazer novamente')
+    print('Você deseja um macarão ou uma pizza?')
+    pedido=int(input('Digite [1] Macarrão ou [2] Pizza'))
+    print(' ')
+
+if pedido == 1:
+    print('Qual tipo de massa você deseja,',nome,'?')
+    print('Temos as seguintes massas:\nEspaguete\nTalharim\nPenne\nParafuso\nGravatinha')
+    massas=input('Digite aqui o tipo de massa escolhido:')
+    print(' ')
+    print('Ótima pedida,',nome, ', você escolheu:', massas)
+    print(' ')
+    print('Qual tipo de molho você deseja em seu macarrão,', nome,'?')
+    print('Temos os seguintes molhos:\nMolho Branco\nMolho a Bolonhesa\nMolho de Atum\nMolho Pesto\nMolho Verde')
+    print(' ')
+    molhos=input('Digite aqui o tipo de molho escolhido:')
+    print(' ')
+    print('Um', massas,'com',molhos, 'saindo para nosso(a) amigo(a),',nome)
+    print('Obrigado pela preferência,',nome,'!')
+
+elif pedido == 2:
+    print('Qual sabor de pizza você deseja?')
+    print('Temos os seguintes sabores de pizza:\nPortuguesa\nCalabresa\n4 queijos\nFrango\nMarguerita\nCamarão')
+    saborp=input('Digite aqui o sabor escolhido:')
+    print(' ')
+    print('Uma pizza',saborp,'saindo para nosso(a) amigo(a),',nome)
+    print('Obrigado pela preferência,',nome,'!')
